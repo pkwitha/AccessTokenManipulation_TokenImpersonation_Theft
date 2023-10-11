@@ -8,3 +8,9 @@ The SeDebugPrivilege privilege is a user right that allows a process to bypass/s
 
 ## technique :
 Creating a new process using a “stolen” token from another process is one of the strategies of token manipulation. This occurs when a token of an existing access token present in one of the active processes on the target host is extracted, duplicated, and then used to create a new process, so granting the new process the privileges of the stolen token.
+
+### for example : winlogon.exe
+![Untitled](https://github.com/pkwitha/AccessTokenManipulation_TokenImpersonation_Theft/assets/91279108/1524161a-0564-4847-8ed9-62ca3e52c665)
+
+### after create process : cmd.exe
+![Untitled2](https://github.com/pkwitha/AccessTokenManipulation_TokenImpersonation_Theft/assets/91279108/017298b8-2633-455b-b713-9cb7e72dcaee)
