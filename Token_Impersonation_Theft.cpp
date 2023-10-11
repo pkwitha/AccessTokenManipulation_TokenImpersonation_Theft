@@ -74,9 +74,9 @@ BOOL createProcess(HANDLE token, LPCWSTR app) {
 
 int main(int argc, char** argv) {
     if (!setPrivilege(SE_DEBUG_NAME)) return -1;
-   // DWORD pid = atoi(argv[1]);
+    DWORD pid = atoi(argv[1]);
     
-    HANDLE cToken = getToken(8416);
+    HANDLE cToken = getToken(pid);
     if (!createProcess(cToken, L"C:\\Windows\\System32\\cmd.exe")) return -1;
     return 0;
 }
