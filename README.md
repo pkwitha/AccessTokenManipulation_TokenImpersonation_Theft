@@ -1,5 +1,6 @@
 # AccessTokenManipulation_TokenImpersonation_Theft
 https://attack.mitre.org/techniques/T1134/001/
+### This attack technique is used by APT28 and FIN8 groups in the wild.
 Privilege Escalation trick (administratior -> SYSTEM)
 
 ## SeDebugPrivilege
